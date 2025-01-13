@@ -1,0 +1,97 @@
+﻿<Window x:Class="LibraryManagementSystem.View.Popups.BookReturn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementSystem.View.Popups"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:dc="clr-namespace:LibraryManagementSystem.ViewModel"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Height="570" Width="950" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+
+    <Window.DataContext>
+        <dc:TransactionViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" CornerRadius="20 20 0 0" Background="#8B5DFF">
+            <StackPanel>
+                <TextBlock Text="New Book Transaction" Style="{StaticResource pagetitle}" Margin="40 20 0 0" FontSize="20" Foreground="White"/>
+                <Image Source="/Images/Header/close.png" Name="btn_close" Margin="0 -26 20 0" Style="{StaticResource closeMinimizeButton}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseUp">
+                            <i:InvokeCommandAction Command="{Binding MouseUpCloseCommand, UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Image>
+            </StackPanel>
+        </Border>
+
+        <Border Background="LightGray" Grid.Row="1">
+            <Grid  Margin="40 40 40 10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <!--Search Transaction-->
+                <StackPanel Grid.Row="0" Margin="0 0 0 20">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="TxtSearchTransaction" Text="{Binding Path=CurrentTransactionInDisplay.TransactionID, Mode=TwoWay}" Padding="8" FontSize="15" Background="Transparent" Width="300" Height="40"/>
+                        <Button Width="120" Content="Transaction ID" Style="{StaticResource UpdateSearchButton}" Command="{Binding Path=SearchCommand}"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <!--Member ID and Book ID-->
+                <StackPanel Grid.Row="1" Margin="0 20 0 20" Orientation="Horizontal">
+                    <StackPanel Width="420">
+                        <TextBlock Text="Member ID" Style="{StaticResource textblockname}"/>
+                        <TextBox x:Name="TxtMemberID" IsReadOnly="True" Text="{Binding Path=CurrentTransactionInDisplay.MemberID, Mode=TwoWay}" FontSize="15" Background="LightGray" Style="{StaticResource textbox}"/>
+                    </StackPanel>
+                    <StackPanel Width="420" Margin="30 0 0 0">
+                        <TextBlock Text="Book ID" Style="{StaticResource textblockname}"/>
+                        <TextBox x:Name="TxtBookID" IsReadOnly="True" Text="{Binding Path=CurrentTransactionInDisplay.BookID, Mode=TwoWay}" FontSize="15" Background="LightGray" Style="{StaticResource textbox}"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <!--Borrow Date-->
+                <Border Grid.Row="2" Margin="0 20 0 20" HorizontalAlignment="Left">
+                    <StackPanel Width="420">
+                        <TextBlock Text="Borrow Date" Style="{StaticResource textblockname}"/>
+                        <DatePicker Name="dpBorrowDate" SelectedDate="{Binding Path=CurrentTransactionInDisplay.BorrowDate, Mode=TwoWay}" Grid.Row="0" Grid.Column="1" Style="{StaticResource DatePickerStyle}" Background="Transparent" BorderThickness="0" Margin="0 20 0 0"/>
+                    </StackPanel>
+                </Border>
+
+                <!--Due Date-->
+                <StackPanel Grid.Row="3" Margin="0 20 0 20" Orientation="Horizontal">
+                    <StackPanel Width="420">
+                        <TextBlock Text="Due Date" Style="{StaticResource textblockname}"/>
+                        <DatePicker Name="dpDueDae" SelectedDate="{Binding Path=CurrentTransactionInDisplay.DueDate, Mode=TwoWay}" Grid.Row="0" Grid.Column="1" Style="{StaticResource DatePickerStyle}" Background="Transparent" BorderThickness="0" Margin="0 20 0 0"/>
+                    </StackPanel>
+                    <StackPanel Width="420" Margin="30 0 0 0">
+                        <TextBlock Text="Return Date" Style="{StaticResource textblockname}"/>
+                        <DatePicker Name="dpReturnDae" SelectedDate="{Binding Path=CurrentTransactionInDisplay.ReturnDate, Mode=TwoWay}" Grid.Row="0" Grid.Column="1" Style="{StaticResource DatePickerStyle}" Background="Transparent" BorderThickness="0" Margin="0 20 0 0"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Button-->
+        <Border Grid.Row="3" CornerRadius="0 0 20 20" Background="LightGray">
+            <StackPanel>
+                <Button x:Name="new_return_btn" Command="{Binding UpdateCommand, UpdateSourceTrigger=PropertyChanged}" Content="Return Book" Style="{StaticResource loginButton}"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Window>

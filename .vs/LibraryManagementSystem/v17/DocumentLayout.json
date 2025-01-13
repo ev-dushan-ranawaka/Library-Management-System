@@ -1,0 +1,178 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\model\\membermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\model\\membermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\entity\\memberentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\entity\\memberentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\customcontrol\\navbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\customcontrol\\navbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\viewmodel\\memberviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\viewmodel\\memberviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\view\\popups\\addbookview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\view\\popups\\addbookview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\view\\usercontrols\\bookcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\view\\usercontrols\\bookcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\view\\windows\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\view\\windows\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\data\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\viewmodel\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\viewmodel\\bookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\desktop\\enkiveda\\final\\librarymanagementsystem\\librarymanagementsystem\\service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3081520-BDBE-4328-96DA-B0D4F868000E}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\service\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 193,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MemberModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\Model\\MemberModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Model\\MemberModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\Model\\MemberModel.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Model\\MemberModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T06:57:28.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MemberEntity.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\Entity\\MemberEntity.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Entity\\MemberEntity.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\Entity\\MemberEntity.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Entity\\MemberEntity.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T06:57:03.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavButton.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\CustomControl\\NavButton.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\CustomControl\\NavButton.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\CustomControl\\NavButton.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\CustomControl\\NavButton.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T06:56:50.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MemberViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\ViewModel\\MemberViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\ViewModel\\MemberViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\ViewModel\\MemberViewModel.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\ViewModel\\MemberViewModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T06:53:17.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddBookView.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\View\\Popups\\AddBookView.xaml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\View\\Popups\\AddBookView.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\View\\Popups\\AddBookView.xaml",
+              "RelativeToolTip": "LibraryManagementSystem\\View\\Popups\\AddBookView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-09T06:51:39.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookControl.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\View\\UserControls\\BookControl.xaml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\View\\UserControls\\BookControl.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\View\\UserControls\\BookControl.xaml",
+              "RelativeToolTip": "LibraryManagementSystem\\View\\UserControls\\BookControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-09T06:50:42.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\View\\Windows\\HomeView.xaml",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\View\\Windows\\HomeView.xaml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\View\\Windows\\HomeView.xaml",
+              "RelativeToolTip": "LibraryManagementSystem\\View\\Windows\\HomeView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-09T06:50:05.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\Data\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Data\\LibraryDbContext.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\Data\\LibraryDbContext.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Data\\LibraryDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T06:49:26.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\ViewModel\\BookViewModel.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\ViewModel\\BookViewModel.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\ViewModel\\BookViewModel.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\ViewModel\\BookViewModel.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T06:48:10.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\Service\\BookService.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Service\\BookService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Enkiveda\\Final\\LibraryManagementSystem\\LibraryManagementSystem\\Service\\BookService.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Service\\BookService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAA1wEQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T06:47:38.124Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

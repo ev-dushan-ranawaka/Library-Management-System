@@ -1,0 +1,98 @@
+﻿<Window x:Class="LibraryManagementSystem.View.Popups.UpdateMemberView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagementSystem.View.Popups"
+        xmlns:dc="clr-namespace:LibraryManagementSystem.ViewModel"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        mc:Ignorable="d"
+        Title="UpdateMemberView" Height="670" Width="500" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+
+    <Window.DataContext>
+        <dc:MemberViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" CornerRadius="20 20 0 0" Background="#8B5DFF">
+            <StackPanel>
+                <TextBlock Text="Update Member" Style="{StaticResource pagetitle}" Margin="40 20 0 0" FontSize="20" Foreground="White"/>
+                <Image Source="/Images/Header/close.png" Name="btn_close" Margin="0 -26 20 0" Style="{StaticResource closeMinimizeButton}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseUp">
+                            <i:InvokeCommandAction Command="{Binding MouseUpCloseCommand, UpdateSourceTrigger=PropertyChanged}" CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=Window}}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Image>
+            </StackPanel>
+        </Border>
+
+        <Border Background="LightGray" Grid.Row="1">
+            <Grid  Margin="40 40 40 10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock x:Name="TxtID"/>
+
+                <!--Search Member-->
+                <Border Grid.Row="0" Margin="0 0 0 20">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="TxtSearch" Text="{Binding Path=CurrentMemberInDisplay.MemberID, Mode=TwoWay}" Padding="8" FontSize="15" Background="Transparent" Width="300" Height="40"/>
+                        <Button Width="120" Content="Search ID" Style="{StaticResource UpdateSearchButton}" Command="{Binding Path=SearchCommand}"/>
+                    </StackPanel>
+                </Border>
+
+                <!--Full Name-->
+                <Border Grid.Row="1" Margin="0 20 0 20">
+                    <StackPanel>
+                        <TextBlock Text="Full Name" Style="{StaticResource textblockname}"/>
+                        <TextBox x:Name="TxtName" Text="{Binding Path=CurrentMemberInDisplay.MemberName, Mode=TwoWay}" FontSize="15" Background="LightGray" Style="{StaticResource textbox}"/>
+                    </StackPanel>
+                </Border>
+
+                <!--Position-->
+                <Border Grid.Row="2" Margin="0 20 0 20">
+                    <StackPanel>
+                        <TextBlock Text="Position" Style="{StaticResource textblockname}"/>
+                        <TextBox x:Name="TxtPosition" Text="{Binding Path=CurrentMemberInDisplay.MemberPosition, Mode=TwoWay}" FontSize="15" Background="LightGray" Style="{StaticResource textbox}"/>
+                    </StackPanel>
+                </Border>
+
+                <!--Email Address-->
+                <Border Grid.Row="3" Margin="0 20 0 20">
+                    <StackPanel>
+                        <TextBlock Text="Email Address" Style="{StaticResource textblockname}"/>
+                        <TextBox x:Name="TxtEmail" Text="{Binding Path=CurrentMemberInDisplay.MemberEmail, Mode=TwoWay}" FontSize="15" Background="LightGray" Style="{StaticResource textbox}"/>
+                    </StackPanel>
+                </Border>
+
+                <!--Mobile Number-->
+                <Border Grid.Row="4" Margin="0 20 0 20">
+                    <StackPanel>
+                        <TextBlock Text="Mobile Number" Style="{StaticResource textblockname}"/>
+                        <TextBox x:Name="TxtMobile" Text="{Binding Path=CurrentMemberInDisplay.MemberMobile, Mode=TwoWay}" FontSize="15" Background="LightGray" Style="{StaticResource textbox}"/>
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+        </Border>
+
+        <!-- Button-->
+        <Border Grid.Row="3" CornerRadius="0 0 20 20" Background="LightGray">
+            <StackPanel>
+                <Button x:Name="update_member_btn" Command="{Binding UpdateCommand, UpdateSourceTrigger=PropertyChanged}" Content="Update Member" Style="{StaticResource loginButton}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

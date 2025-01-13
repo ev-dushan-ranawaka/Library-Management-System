@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="LibraryManagementSystem.View.UserControls.MemberControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LibraryManagementSystem.View.UserControls"
+             xmlns:dc="clr-namespace:LibraryManagementSystem.ViewModel"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.DataContext>
+        <dc:MemberViewModel/>
+    </UserControl.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <!--Page title and Main button section-->
+        <TextBlock Text="Manage Members" Grid.Row="1" Style="{StaticResource pagetitle}" Margin="20 0 0 0"/>
+        <Button Content="Update Member" x:Name="membersUpdate_btn" Grid.Row="1" Style="{StaticResource pagebutton}" Command="{Binding ClickUpdateMemberCommand}" HorizontalAlignment="Right" Margin="0 0 20 0"/>
+        <Button Content="+ Add New Member" x:Name="membersAdd_btn" Grid.Row="1" Style="{StaticResource pagebutton}" Command="{Binding ClickAddMemberComand}" HorizontalAlignment="Right" Margin="0 0 180 0"/>
+
+        <!--Data Grid section-->
+        <DataGrid ItemsSource="{Binding MemberListInDisplay, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"  Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" x:Name="membersDataGrid" Margin="10 40 10 0" Grid.Row="2">
+            <DataGrid.Columns>
+
+                <DataGridTextColumn Header="Member ID" Binding="{Binding id}" IsReadOnly="True" Width="100"/>
+                <DataGridTextColumn Header="Full Name" Binding="{Binding name}" IsReadOnly="True" Width="200"/>
+                <DataGridTextColumn Header="Position" Binding="{Binding position}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="Email Address" Binding="{Binding email}" IsReadOnly="True" Width="270"/>
+                <DataGridTextColumn Header="Mobile Number" Binding="{Binding mobile}" IsReadOnly="True" Width="120"/>
+
+                <DataGridTemplateColumn Header="Operations" IsReadOnly="True" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Margin="22 5 0 5" Background="#e62929" Command="{Binding DataContext.DeleteCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding id}" Style="{StaticResource deletebutton}" x:Name="delete_member_btn">
+                                    <Path Margin="5" Width="12" Height="12" Fill="White" Stretch="Uniform" Data="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</UserControl>
