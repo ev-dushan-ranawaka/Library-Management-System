@@ -615,7 +615,7 @@ Then open it, and then we need to edit according to ProductBrand function slice 
 
 I already prepared the brand-function.json file and I'm going to use it here.
 ```powershell
-manifest = {
+{
   "$schema": "../function-add.schema.json",
   "schemaVersion": 1,
   "kind": "enkiveda.public-v2.gg.function.add",
