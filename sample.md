@@ -1,4 +1,4 @@
-Okay, let's look at the flow of adding a Function and running Aspire from the Slice foundation, the first main feature of Scaffolder.
+Okay, let's look at the flow of adding a Function and running Aspire from the Slice foundation, this is the first main feature of Scaffolder.
 
 First you need to install Scaffolder latest approved version, at the moment approved version is 0.5.8.
 
