@@ -8,9 +8,9 @@ There are 3 steps to follow before installing.
 
 1. 1st is you must need Enkiveda Azure DeVos access, Lishan will give you an invitation for that.
 2. Then you need to confirm that the .NET SDK version is 10.0.302. - dotnet --version
-3. Last step is, you need to install the tool for Azure Artifacts credential provider, you can sign in with your Microsoft account.
+3. Last step is, you need to install the tool for Azure Artifacts credential provider, then you can sign in with your Microsoft account.
 
-If the all 3 steps complete you able to install ENKIVEDA.Scaffolder
+If the all 3 steps completed, you able to install ENKIVEDA.Scaffolder
 
 ### Note them:
 
@@ -23,6 +23,8 @@ First you need to assign Release NuGet feed URL into PowerShell variable. Then y
 ```powershell
 $feed = "https://pkgs.dev.azure.com/ENKIVEDA/enkiveda-tools/_packaging/enkiveda-tools@Release/nuget/v3/index.json"
 ```
+Oh
+The main reason to use PowerShell is because you are working in a Windows environment and the commands/readability are easier.
 
 Then run the tool install command
 
