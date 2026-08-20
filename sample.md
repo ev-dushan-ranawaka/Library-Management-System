@@ -381,7 +381,7 @@ Now, business logic implementation part is done.
 
 ## 03 - capability add
 
-3rd main step is, capability add. We need to add the capability to officially register the Brand business code you created manually to the Scaffolder lifecycle.
+3rd main step is, capability add. We need to add the capability to officially register the Brand business code we created manually to the Scaffolder lifecycle.
 
 ### Step 01 -
 
