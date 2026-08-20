@@ -42,9 +42,16 @@ After installation complete verify the installation
 enkiveda-scaffold --version
 ```
 
-`enkiveda-scaffold packs --json --non-interactive` (Its showing 2 packes, In Gear Guard pack version is 0.6.6. The packs command does not generate code. It only to inspect what architecture packs are available for the scaffolder.)
+```powershell
+enkiveda-scaffold packs --json --non-interactive
+```
 
-`enkiveda-scaffold --pack gg --help` (The command shows the commands available for the Gear Guard pack and how to use them. you can check them when you are using the tool)
+(Its showing 2 packes, In Gear Guard pack version is 0.6.6. The packs command does not generate code. It only to inspect what architecture packs are available for the scaffolder.)
+
+```powershell
+enkiveda-scaffold --pack gg --help
+```
+(The command shows the commands available for the Gear Guard pack and how to use them. you can check them when you are using the tool)
 
 Okay, Scaffolder installation and verification part is done.
 
