@@ -24,7 +24,7 @@ First you need to assign Release NuGet feed URL into PowerShell variable. Then y
 $feed = "https://pkgs.dev.azure.com/ENKIVEDA/enkiveda-tools/_packaging/enkiveda-tools@Release/nuget/v3/index.json"
 ```
 Oh
-The main reason to use PowerShell is because you are working in a Windows environment and the commands/readability are easier.
+The main reason to use PowerShell is because we are working in a Windows environment and the commands/readability are easier.
 
 Then run the tool install command
 
