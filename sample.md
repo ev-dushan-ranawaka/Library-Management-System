@@ -614,6 +614,84 @@ Copy-Item `
 Then open it, and then we need to edit according to ProductBrand function slice and Brand capability.
 
 I already prepared the brand-function.json file and I'm going to use it here.
+```powershell
+manifest = {
+  "$schema": "../function-add.schema.json",
+  "schemaVersion": 1,
+  "kind": "enkiveda.public-v2.gg.function.add",
+  "id": "create-brand",
+  "version": "1.0.0",
+  "slice": {
+    "id": "product-brand",
+    "name": "ProductBrand"
+  },
+  "capabilities": {
+    "persistence": {
+      "kind": "sql-server",
+      "schema": "dbo"
+    },
+    "messaging": "azure-service-bus",
+    "tenancy": "product-context"
+  },
+  "capability": {
+    "name": "Brand",
+    "pluralName": "Brands"
+  },
+  "function": {
+    "name": "CreateBrand",
+    "adapterProfile": "tenant-scoped-body-command-v1",
+    "route": "v1/product-brand/brands",
+    "successStatus": 201,
+    "routeParameters": []
+  },
+  "binding": {
+    "requestType": "GG.Functions.ProductBrand.Presentation.Models.CreateBrandRequest",
+    "messageType": "GG.Functions.ProductBrand.Application.Brands.Commands.CreateBrand.CreateBrandCommand",
+    "resultType": "GG.Functions.ProductBrand.Application.Brands.Commands.CreateBrand.CreateBrandResult",
+    "handlerType": "GG.Functions.ProductBrand.Application.Brands.Commands.CreateBrand.CreateBrandCommandHandler",
+    "mapper": {
+      "ownerType": "GG.Functions.ProductBrand.Functions.BrandCommandExtensions",
+      "member": "ToCommand",
+      "arguments": []
+    }
+  },
+  "authorization": {
+    "callerErrorFactory": {
+      "ownerType": "GG.Functions.ProductBrand.Functions.BrandCallerContext",
+      "member": "ErrorFactory"
+    },
+    "permission": {
+      "ownerType": "GG.Functions.ProductBrand.Domain.Brands.Errors.BrandErrors",
+      "member": "WritePermission"
+    },
+    "permissionDenied": {
+      "ownerType": "GG.Functions.ProductBrand.Domain.Brands.Errors.BrandErrors",
+      "member": "PermissionDenied"
+    }
+  },
+  "errors": {
+    "bodyRequired": {
+      "ownerType": "GG.Functions.ProductBrand.Domain.Brands.Errors.BrandErrors",
+      "member": "RequestBodyRequired"
+    },
+    "unhandled": {
+      "ownerType": "GG.Functions.ProductBrand.Domain.Brands.Errors.BrandErrors",
+      "member": "UnhandledPipelineErrors"
+    }
+  },
+  "tenantContext": {
+    "factoryType": "GG.Functions.ProductBrand.Infrastructure.Multitenancy.ProductBrandTenantContextFactory",
+    "tenantFilterKey": {
+      "ownerType": "GG.Functions.ProductBrand.Domain.Brands.Errors.BrandErrors",
+      "member": "TenantFilterKey"
+    },
+    "tenantFilterDenied": {
+      "ownerType": "GG.Functions.ProductBrand.Domain.Brands.Errors.BrandErrors",
+      "member": "TenantFilterDenied"
+    }
+  }
+}
+```
 
 ### Step 02 -
 
